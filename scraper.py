@@ -13,22 +13,19 @@ print (raw)
 
 
 
+from cssutils import parseStyle
 
-#addition to parse colors
-#
-#from cssutils import parseStyle
-#
-#
-#
-#soup = BeautifulSoup(page, features="lxml")
-##
-#
-#for i in soup.select("option"):
-#style = parseStyle(soup.option['style'])
-#	
-#    print(i.text)
-#    style = parseStyle(i['style'])
-#    print(style['background-color'])
-#
-#
-#style = parseStyle(soup.option['style'])
+
+
+soup = BeautifulSoup(page, features="lxml")
+
+
+for i in soup.select("option"):
+	#style = parseStyle(soup.option['style'])
+	
+    print(i.text)
+    style = parseStyle(i['style'])
+    print(style['background-color'])
+
+
+style = parseStyle(soup.option['style'])
