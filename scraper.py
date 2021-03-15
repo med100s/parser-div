@@ -12,7 +12,7 @@ print (raw)
 
 
 
-/////////thins for creating array with ncs
+#thins for creating array with ncs
 
 from cssutils import parseStyle
 
